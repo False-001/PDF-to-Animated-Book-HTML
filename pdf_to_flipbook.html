@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A simple, editable newsletter builder with live preview and HTML export.">
-<title>PageCraft — PDF to Flipbook</title>
+<title>PDF to Flipbook</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
 <style>
@@ -29,11 +29,11 @@
 .book-page.flipped{transform:rotateY(-180deg);box-shadow:inset -12px 0 18px -18px #1b3026}
 .book-page.active{z-index:2}
 .book-page.past{z-index:1}
-.book-page.future{z-index:0}
-.page-inner{height:100%;overflow:hidden;position:relative;padding:40px 44px 34px;display:flex;flex-direction:column}
-.page-inner.cover{background:linear-gradient(145deg,#f7faf8,#eaf4ef);justify-content:space-between;text-align:center;padding:48px 42px}
-.page-brand{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:800}
-.page-cover-title{font-family:Georgia,serif;font-size:clamp(30px,4vw,48px);line-height:1.05;font-weight:500;letter-spacing:-1.4px;margin:auto 0;color:#17372b}
+.book-.future{z-index:0}
+.-inner{height:100%;overflow:hidden;position:relative;padding:40px 44px 34px;display:flex;flex-direction:column}
+.-inner.cover{background:linear-gradient(145deg,#f7faf8,#eaf4ef);justify-content:space-between;text-align:center;padding:48px 42px}
+.-brand{font-size:11px;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:800}
+.-cover-title{font-family:Georgia,serif;font-size:clamp(30px,4vw,48px);line-height:1.05;font-weight:500;letter-spacing:-1.4px;margin:auto 0;color:#17372b}
 .page-cover-meta{font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:#78877f}
 .page-cover-rule{width:48px;height:3px;background:var(--accent);margin:18px auto}
 .page-inner.intro{justify-content:center}
@@ -105,7 +105,7 @@
 </style>
 
 <style id="pdf-converter-mode">
-/* PageCraft is a PDF-to-flipbook converter, not a newsletter authoring editor. */
+/* PDF-to-flipbook converter, not a newsletter authoring editor. */
 .panel[aria-label="PDF to flipbook converter"] > :not(.panel-head):not(#pdfUploadField):not(.actions):not(.hint){display:none!important}
 .panel[aria-label="PDF to flipbook converter"] .actions .btn:first-child{display:none!important}
 .panel[aria-label="PDF to flipbook converter"] .actions{margin-top:18px}
@@ -121,7 +121,7 @@
 </head>
 <body>
 <header class="topbar">
-  <div class="brand"><span class="brand-mark"></span><span>PageCraft</span></div>
+  <div class="brand"><span class="brand-mark"></span><span></span></div>
   <nav class="nav"><a href="#builder">Create</a><a href="#templates">Templates</a><a href="#features">Features</a><a href="#builder">Pricing</a><a href="#builder">Guides</a><a href="#builder">Contact</a><a href="#builder">API</a><a href="#builder">English⌄</a><a href="#builder">Log In</a><a class="signup" href="#builder">Get Started</a></nav>
 </header>
 <main class="app" id="builder">
